@@ -5,9 +5,9 @@ Handles download by reading from a mustache template.
 
 
 Using it
-------
+--------
 
-1. 	In a Maven project's pom.xml file:
+1.     In a Maven project's pom.xml file:
 
 ```xml	 
 <repositories>
@@ -139,6 +139,9 @@ public class TemplateController {
 Project Information
 -------------------
 
-:Author: Cenobit Technologies, Inc.
-:Version: 1.0-SNAPSHOT of 2013/10/15
-:License: `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0.html>`_
+* __Author:__ Cenobit Technologies, Inc.
+* __Version:__ 1.0-SNAPSHOT of 2013/10/15
+* __License:__ [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html "Apache License 2.0")
+
+
+
