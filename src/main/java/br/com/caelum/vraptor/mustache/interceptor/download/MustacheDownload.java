@@ -16,9 +16,9 @@
  */
 package br.com.caelum.vraptor.mustache.interceptor.download;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
@@ -27,6 +27,8 @@ import java.io.StringReader;
 import java.io.Writer;
 
 import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.io.IOUtils;
 
 import br.com.caelum.vraptor.interceptor.download.Download;
 import br.com.caelum.vraptor.interceptor.download.FileDownload;
@@ -90,30 +92,7 @@ public class MustacheDownload implements Download {
 		}
 	}
 
-	private String fileContent(File filename) throws IOException {
-		String pathname = filename.getPath();
-		StringBuffer content = new StringBuffer();
-		BufferedReader reader = null;
-
-		try {
-			String line = null;
-			reader = new BufferedReader(new FileReader(new File(pathname)));
-
-			while ((line = reader.readLine()) != null) {
-				content.append(line);
-			}
-
-		} catch (IOException e) {
-			throw e;
-		} finally {
-			try {
-				if (reader != null) {
-					reader.close();
-				}
-			} catch (IOException ex) {
-			}
-		}
-
-		return content.toString();
+	private String fileContent(File filename) throws FileNotFoundException, IOException {
+		return IOUtils.toString(new FileInputStream(filename));
 	}
 }
