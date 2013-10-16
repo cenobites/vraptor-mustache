@@ -26,7 +26,7 @@ Using it
 <dependency>
 	<groupId>es.cenobit.vraptor</groupId>
   	<artifactId>vraptor-mustache</artifactId>
-  	<version>1.0-SNAPSHOT</version>
+  	<version>1.0</version>
 </dependency>
 ```
 
@@ -140,7 +140,7 @@ Project Information
 -------------------
 
 * __Author:__ Cenobit Technologies, Inc.
-* __Version:__ 1.0-SNAPSHOT of 2013/10/15
+* __Version:__ 1.0 of 2013/10/15
 * __License:__ [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html "Apache License 2.0")
 
 
