@@ -10,19 +10,6 @@ Using it
 1.     In a Maven project's pom.xml file:
 
 ```xml	 
-<repositories>
-	<repository>
-    	<id>sonatype-oss-public</id>
-        <url>https://oss.sonatype.org/content/groups/public/</url>
-    	<releases>
-    		<enabled>true</enabled>
-    	</releases>
-    	<snapshots>
-    		<enabled>true</enabled>
-		</snapshots>
-	</repository>		
-</repositories>  
-
 <dependency>
 	<groupId>es.cenobit.vraptor</groupId>
   	<artifactId>vraptor-mustache</artifactId>
