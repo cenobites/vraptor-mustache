@@ -2,23 +2,23 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://maven.apache.org/POM/4.0.0"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
 	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Sonatype config to publish on Maven Central -->
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
 
 	<groupId>es.cenobit.vraptor</groupId>
 	<artifactId>vraptor-mustache</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
 
-	<name>vraptor-mustache</name>
+	<name>VRaptor Mustache</name>
 	<description>Handles download by reading from a mustache template</description>
 	<url>https://github.com/cenobites/vraptor-mustache</url>
-
-	<parent>
-		<groupId>org.sonatype.oss</groupId>
-		<artifactId>oss-parent</artifactId>
-		<version>7</version>
-	</parent>
 
 	<licenses>
 		<license>
@@ -27,6 +27,11 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+
+	<organization>
+		<name>Cenobit Technologies Inc.</name>
+		<url>http://cenobit.es/</url>
+	</organization>
 
 	<developers>
 		<developer>
